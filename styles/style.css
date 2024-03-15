@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root {
+  --cor-principal: #F3F5FC;
+  --cor-secundaria: #0A3871;
+  --cor-terciaria: #FFFFFF;
+  --fonte-principal: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-principal)
+}
+
+.imagem__logo {
+  margin: 1.5rem;
+}
+
+.area__principal {
+  margin: 4%;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--fonte-principal);
+  color: var(--cor-secundaria);
+}
+
+.area__criptografa {
+  align-items: center;
+}
+
+.area__criptografa__conteudo {
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+  font-size: 32px;
+  font-family: var(--fonte-principal);
+  width: 680px;
+  border: none;
+}
+
+.area__descriptografa {
+  background-color: var(--cor-terciaria);
+  border-radius: 32px;
+  color: #495057;
+  text-align: center;
+  width: 400px;
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+}
+
+
+.area__descriptografa__destaque {
+  color: #343A40;
+  text-align: center;
+  font-family: var(--fonte-principal);
+  font-size: 24px;
+}
+
+.area__aviso {
+  display: flex;
+  padding: 10px;
+}
+
+.texto__aviso {
+  color: #495057;
+  font-family: var(--fonte-principal);
+  font-size: 12px;
+}
+
+.area__botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botao__criptografar {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
+  border: 1px solid;
+  font-family: var(--fonte-principal);
+  width: 328px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 24px;
+  padding: 24px 0;
+}
+
+.botao__descriptografar {
+  background-color: #D8DFE8;
+  border-color: var(--cor-secundaria);
+  color: var(--cor-secundaria);
+  border: 1px solid;
+  font-family: var(--fonte-principal);
+  width: 328px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 24px;
+  padding: 24px 0;
+}
+
+.botao__copiar {
+  font-family: var(--fonte-principal);
+}
