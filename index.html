@@ -5,15 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Decodificador</title>
+  <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
   <header>
-
+    <img class="imagem__logo" src="./assets/Header.png" alt="logo alura">
   </header>
-  <main>
-    <section>
-      
+  <main class="area__principal">
+    <section class="area__principal__conteudo">
+      <h1>Decodificador de Texto</h1>
+        <div class="area__criptografa">
+          <textarea class="area__criptografa__conteudo" placeholder="Digite seu texto" name="" id="" cols="80" rows="30"></textarea>
+        </div>
+        <div class="area__aviso">
+          <img src="./assets/Group.png" alt="exclamação">
+          <p class="texto__aviso">Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="area__botoes">
+          <button class="botao__criptografar">Criptografar</button>
+          <button class="botao__descriptografar">Descriptografar</button>
+        </div>    
     </section>
+        <div class="area__descriptografa">
+          <img class="area__descriptografa__imagem" src="./assets/High quality products 1 1.svg" alt="garoto com uma lupa">
+          <p class="area__descriptografa__conteudo"><strong class="area__descriptografa__destaque">Nenhuma mensagem encontrada</strong>. Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+          <button class="botao__copiar">Copiar</button>
+        </div>
   </main>
   <footer>
 
