@@ -1,17 +1,10 @@
-let ocultaConteudo = document.querySelector('.botao__descriptografar');
-
-ocultaConteudo.addEventListener('click', ocultarConteudoDes);
-
-function ocultarConteudoDes () {
-  let areaDesciptografada = document.getElementById('areaDesConteudo');
-  areaDesciptografada.style.display = 'none';
-}
-
 let criptografa = document.querySelector('.botao__criptografar');
+let descriptografa = document.querySelector('.botao__descriptografar');
 let textoDigitado = document.getElementById('textooriginal');
 let textoCriptografado = document.getElementById('areaDesConteudo');
 
 criptografa.addEventListener('click', criptografar)
+descriptografa.addEventListener('click', descriptografar);
 
 function criptografar () {
   let textoOriginal = textoDigitado.value;
@@ -42,5 +35,18 @@ function criptografar () {
     }
 } 
   textoCriptografado.textContent = textoCripto;
-  console.log(textoCripto);
+}
+
+function descriptografar () {
+  let conteudoCriptografado = textoDigitado.value;
+
+  let textoDescripto = conteudoCriptografado
+    .replace(/enter/g, 'e')
+    .replace(/imes/g, 'i')
+    .replace(/ai/g, 'a')
+    .replace(/ober/g, 'o')
+    .replace(/ufat/g, 'u');
+
+  textoCriptografado.textContent = textoDescripto;
+  console.log(textoDescripto);
 }
