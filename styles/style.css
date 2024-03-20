@@ -27,22 +27,38 @@ body {
   justify-content: space-between;
   font-family: var(--fonte-principal);
   color: var(--cor-secundaria);
-  
-}
-
-.area__principal__conteudo {
-  align-items: center;
+  gap: 82px;
 }
 
 .area__criptografa__conteudo {
   background-color: var(--cor-principal);
   color: var(--cor-secundaria);
-  font-size: 32px;
+  font-size: 1.8rem;
   font-family: var(--fonte-principal);
   border: none;
-  width: 41rem;
-  height: 24rem;
-  margin-right: 1.5rem;
+  outline: none;
+  resize: none;
+  width: 50%;
+  height: 28rem;
+  margin-right: 1rem;
+  margin: 1.75rem;
+}
+
+.area__criptografa {
+  position: relative;
+  border: 1.5px solid var(--cor-secundaria);
+  border-radius: 3px;
+}
+
+.botao__limpar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  color: var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  border: none;
+  cursor: pointer;
 }
 
 .area__descriptografa {
@@ -52,20 +68,27 @@ body {
   background-color: var(--cor-terciaria);
   border-radius: 32px;
   color: #495057;
-  width: 100%;
-  max-width: 24rem;
-  height: auto;
   font-family: var(--fonte-principal);
-  font-size: 20px;
-  padding: 1.2rem;
-  gap: 50px;
+  font-size: 1.3rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.area__descriptografa__conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+}
+
+.area__descriptografa__imagem {
+  margin: 1rem 0;
 }
 
 .area__descriptografa__destaque {
   color: #343A40;
   font-family: var(--fonte-principal);
-  font-size: 24px;
+  font-size: 1.4rem;
 }
 
 .area__aviso {
@@ -76,12 +99,14 @@ body {
 .texto__aviso {
   color: #495057;
   font-family: var(--fonte-principal);
-  font-size: 12px;
+  font-size: 0.75rem;
   margin: 0 0.50rem;
 }
 
 .area__botoes {
   align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .botao__criptografar,
@@ -96,7 +121,7 @@ body {
   border: 1px solid;
   font-family: var(--fonte-principal);
   width: 320px;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   border-radius: 24px;
   padding: 1.5rem 0;
@@ -113,7 +138,7 @@ body {
   border: 1px solid;
   font-family: var(--fonte-principal);
   width: 320px;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   border-radius: 24px;
   padding: 1.5rem 0;
@@ -124,21 +149,12 @@ body {
 }
 
 .botao__copiar {
-  font-family: var(--fonte-principal);
-  border-color: var(--cor-secundaria);
+  color: var(--cor-secundaria);
   background-color: var(--cor-terciaria);
-  border: 1px solid;
-  font-size: 16px;
-  text-align: center;
-  border-radius: 24px;
-  padding: 1.5rem 0;
-  width: 320px;
-  margin: 2rem;
+  border: none;
   cursor: pointer;
-}
-
-.botao__copiar:hover {
-  background-color: #AAB2D5;
+  margin-top: 4rem;
+  position: relative;
 }
 
 .rodape__txt__dev {
@@ -156,4 +172,43 @@ body {
   font-size: 0.75rem;
   margin-top: 0.65rem;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+
+  .conteudo__header{
+    width: auto;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+  }
+  .area__principal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+  }
+
+  .area__criptografa__conteudo{
+    width:auto;
+  }
+  .area__botoes {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .area__descriptografa__conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .area__descriptografa__imagem {
+    display: none;
+  }
+  .area__descriptografa {
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+  }
 }

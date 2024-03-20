@@ -6,15 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Decodificador</title>
   <link rel="stylesheet" href="/styles/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="conteudo__header">
     <img class="imagem__logo" src="./assets/Header.png" alt="logo alura">
   </header>
   <main class="area__principal">
     <section class="area__principal__conteudo">
         <div class="area__criptografa">
-          <textarea id="textooriginal" class="area__criptografa__conteudo" placeholder="Digite seu texto"></textarea>
+          <textarea id="textooriginal" class="area__criptografa__conteudo" placeholder="Digite seu texto aqui"></textarea>
+            <button id="limpaTexto" class="botao__limpar">
+              <i class="material-icons" style="font-size: 35px;">clear</i>
+            </button>
         </div>
         <div class="area__aviso">
           <img src="./assets/Group.png" alt="exclamação">
@@ -28,10 +32,10 @@
         <div class="area__descriptografa">
           <div id="areaDesConteudo">
             <img class="area__descriptografa__imagem" src="./assets/High quality products 1 1.svg" alt="garoto com uma lupa">
-            <p class="area__descriptografa__conteudo"><strong class="area__descriptografa__destaque">Nenhuma mensagem encontrada</strong>. Digite um texto que você deseja criptografar ou descriptografar.
+            <p class="area__descriptografa__conteudo"><strong class="area__descriptografa__destaque">Nenhuma mensagem encontrada.</strong>Aqui aparecerá seu texto criptografado ou descriptografado.
             </p>
-            <button class="botao__copiar">Copiar</button>
           </div>
+          <button class="botao__copiar"><i class="material-icons" style="font-size: 34px;">content_copy</i></button>
         </div>
   </main>
   <footer>
