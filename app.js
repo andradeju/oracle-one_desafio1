@@ -50,3 +50,29 @@ function descriptografar () {
   textoCriptografado.textContent = textoDescripto;
   console.log(textoDescripto);
 }
+
+let apagaTexto = document.getElementById('limpaTexto');
+apagaTexto.addEventListener('click', limparTexto);
+
+
+function limparTexto () {
+  document.getElementById('textooriginal').value = "";
+  document.getElementById('areaDesConteudo').innerHTML = "";
+}
+
+let botaoCopiar = document.querySelector('.botao__copiar');
+let areaCopiada = document.getElementById('areaDesConteudo');
+
+botaoCopiar.addEventListener('click', copiarTexto);
+
+function copiarTexto () {
+  let textoParaCopiar = areaCopiada.innerText;
+
+  navigator.clipboard.writeText(textoParaCopiar)
+    .then(() => {
+      alert("Texto copiado!");
+    })
+    .catch(err => {
+      console.error("Erro ao copiar o texto: ", err);
+    })
+}
