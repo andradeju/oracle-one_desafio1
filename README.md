@@ -24,7 +24,7 @@ Estas são as chaves de criptografia utilizadas para decodificar os textos inser
 <br>
 
 ## 🚀 Deploy do Site
-O site está disponível online, clique aqui: **[Pet's Home]()** <br>
+O site está disponível online, clique aqui: **[Decodificador de Texto](https://andradeju.github.io/oracle-one_desafio1/)** <br>
 Visite o link para explorar as funcionalidades.
 
 ## ⌨️ Rodando o Projeto Localmente
